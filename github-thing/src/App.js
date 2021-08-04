@@ -2,6 +2,7 @@ import "./App.css";
 
 import React, { Component } from "react";
 
+import Follows from "./components/Follows";
 import UserCard from "./components/UserCard";
 import axios from "axios";
 
@@ -45,6 +46,7 @@ class App extends Component {
           followers={this.state.followers}
           following={this.state.following}
         />
+        <Follows />
       </div>
     );
   }
